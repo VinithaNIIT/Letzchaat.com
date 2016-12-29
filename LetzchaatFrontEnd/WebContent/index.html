@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>LetzChaat.com</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+ 
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+ <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="lib/js/skel.min.js"></script>
+		<script src="lib/js/skel-panels.min.js"></script>
+		<script src="lib/js/init.js"></script>
+		<script src="lib/js/modernizr-2.6.2.min.js"></script>
+<!-- <script src="lib/js/jquery-1.10.2.min.js"></script> -->
+<!-- <script src="lib/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" href="lib/css/style.css" />
+  <!-- <link rel="stylesheet" href="lib/css/font-awesome.min.css"/> -->
+   <!--  <link rel="stylesheet" href="lib/css/bootstrap.min.css"> -->
+   <!-- <link rel="stylesheet" href="lib/css/style-desktop.css" /> -->
+   
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+   <style >
+   
+   .nav navbar-nav:hover
+{
+  background-color: transparent;
+  color: #999999;
+}
+.navbar-header{
+  margin-left:5px;
+  width:100%;
+}
+
+   </style>
+   <script>
+	$('#myCarousel').carousel({
+		interval: 1000
+	})
+</script>
+</head>
+<body>
+<div id="wrapper">
+
+<div id="header-wrapper"> <!-- style="background: url(lib/image/img03.png) repeat;" -->
+				<div class="container">
+					<div id="header" >
+						<div id="logo">
+							<h1><a href="#">LetzChaat.com</a></h1>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					
+					<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+     <li class="current_page_item"><a href="index.html" >Home</a></li>
+							<li><a href="threecolumn.html">AboutUs</a></li>
+							<li><a href="twocolumn1.html" >Blogs</a></li>
+							<li><a href="twocolumn2.html" >Events</a></li>
+							<li><a href="twocolumn2.html">Jobs</a></li>
+							<li><a href="onecolumn.html" >ContactUs</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    	<li style="text-align: right;">
+	<a href="#/login"  style="text-align: right;">
+		<span class="glyphicon glyphicon-user"></span>
+	Login</a>
+	</li>				
+	<li style="text-align: right;">
+	<a href="Registration"  style="text-align: right;">
+		<span class="glyphicon glyphicon-user"></span>
+	Sign Up</a>
+	</li>
+    </ul>
+  </div>
+</nav>
+	</div>			
+				<div class="container">
+					
+					
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="lib/image/banner1.jpg" alt="Banner1" width="100%" height="250px">
+      </div>
+
+      <div class="item">
+        <img src="lib/image/banner2.jpg" alt="Banner2" width="100%" height="250px">
+      </div>
+    
+      <div class="item">
+        <img src="lib/image/banner3.jpg" alt="Banner3" width="100%" height="250px">
+      </div>
+
+      <div class="item">
+        <img src="lib/image/banner4.jpg" alt="Banner4" width="100%" height="250px">
+      </div>
+      
+    </div>
+			 <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>		
+					
+					
+				</div>
+			</div>
+				</div>
+</div>
+<div ng-include src="'l_common/header.html'"></div>
+ <div ng-view></div>
+
+</body>
+<script src="app.js"></script>
+<script src="l_user/UserController.js"></script>
+<script src="l_user/UserService.js"></script>
+</html>

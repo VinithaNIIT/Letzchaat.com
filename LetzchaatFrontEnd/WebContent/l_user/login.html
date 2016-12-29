@@ -1,0 +1,58 @@
+<body>
+<div ng-app="myApp">
+<div class="container"  ng-controller="UserController as ctrl">
+    <form name="form" method="post" ng-submit="ctrl.login()">
+
+    <div class="omb_login">
+    	<h3 class="omb_authTitle">Login </h3>
+	
+
+	
+		<div class="row omb_row-sm-offset-3">
+			<div class="col-xs-12 col-sm-6">	
+			    <form class="omb_loginForm" action="" autocomplete="off" method="POST">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-user"></i></span>
+						<input type="text" class="form-control" name="username" placeholder="User Name">
+					</div>
+					<span class="help-block"></span>
+										
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+						<input  type="password" class="form-control" name="password" placeholder="Password">
+					</div>
+                    <span class="help-block"></span>
+
+					<!-- <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button> -->
+					<input type="submit" value="LOGIN">
+				</form>
+			</div>
+    	</div>
+	  	
+	</div>
+</form>
+</div>
+</div>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+</body>
+<!-- <div ng-app="myApp" ng-controller="UserController as ctrl">
+<form name="form" ng-submit="ctrl.login()">
+<table>
+<tr>
+<td>UserName:</td>
+<td><input type="text" name="username"></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" name="password"></td>
+
+</tr>
+<tr>
+<td><input type="submit" value="Login"></td>
+</tr>
+
+</table>
+</form>
+
+</div> -->
